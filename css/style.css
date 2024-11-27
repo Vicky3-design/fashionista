@@ -1,0 +1,419 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+.logo a {
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e67e22;
+}
+
+/* About Page */
+.about {
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+.hero {
+    background: url('https://assets.architecturaldigest.in/photos/66696d6287e1ba2c77e73445/master/w_1600%2Cc_limit/JADE%2520by%2520Monica%2520&%2520Karishma%2520Couture%2520Presentation%2520at%2520CSMVS%2520(2).jpg') no-repeat center center/cover;
+    color: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+	color:#fff;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.category {
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.category a {
+    color: #f39c12;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.category a:hover {
+    color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-logo a {
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+}
+.fashion-section {
+    padding: 40px 10%;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fashion-section .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fashion-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fashion-gallery .item {
+    text-align: center;
+    margin: 10px;
+    flex-basis: 30%;
+}
+
+.fashion-gallery .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fashion-gallery .item img:hover {
+    transform: scale(1.05);
+}
+
+.fashion-gallery .item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.blog-posts {
+    width: 70%;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+.post img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post h2 {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.post a {
+    color: #f39c12;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #e67e22;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f39c12;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #e67e22;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #f39c12;
+}
+
+footer p {
+    font-size: 16px;
+}
+.contact-section {
+    padding: 40px 10%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact-form button:hover {
+    background-color: #34495e;
+}
+
+/* About Page */
+.about-section {
+    padding: 40px 10%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-info {
+    margin-bottom: 20px;
+}
+
+.about-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.about-info p {
+    line-height: 1.6;
+}
